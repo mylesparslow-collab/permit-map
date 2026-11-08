@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Permit Map</title>
+<meta name="description" content="A drop-in permit lead map for contractors: new building permits as leads for your trade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+  :root { --bg: #F4F4F2; --surface: #FFFFFF; --text: #1B1D1F; --muted: #62666B; --hair: #E6E6E2; --accent: #C4510C; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111315; --surface: #181A1D; --text: #E8E9EA; --muted: #A0A4A9; --hair: #2A2D31; --accent: #FF7A2E; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 400 15px/1.55 "Geist", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 40px max(16px, env(safe-area-inset-left)) 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .mark { width: 30px; height: 30px; display: grid; place-items: center; border: 2px dashed var(--accent); outline: 1.5px solid var(--accent); outline-offset: -5px; border-radius: 5px; transform: rotate(-3deg); color: var(--accent); font: 600 11px/1 "Geist Mono", monospace; }
+  h1 { margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -.01em; }
+  .lede { margin: 0 0 24px; max-width: 64ch; color: var(--muted); font-size: 16px; text-wrap: balance; }
+  .lede b { color: var(--text); font-weight: 500; }
+  permit-map { display: block; border: 1px solid var(--hair); border-radius: 12px; overflow: hidden; background: var(--surface); }
+  h2 { margin: 40px 0 10px; font-size: 15px; font-weight: 600; }
+  pre { margin: 0; padding: 16px; overflow-x: auto; background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; font: 400 13px/1.6 "Geist Mono", ui-monospace, monospace; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 12px; }
+  .grid div { background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; padding: 14px 16px; }
+  .grid b { display: block; font-weight: 600; margin-bottom: 4px; }
+  .grid span { color: var(--muted); font-size: 14px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><span class="mark" aria-hidden="true">PM</span><h1>Permit Map</h1></header>
+  <p class="lede">New building permits, as leads for <b>your</b> trade. A kitchen remodel permit means countertops and cabinets soon; a new pool means fencing and landscaping. Pick a trade and an area, then work the leads: status, follow-ups, notes, export.</p>
+
+  <permit-map trade="countertops" center="34.0195,-118.4912" radius="10" business-name="Your Business" height="720px"></permit-map>
+
+  <h2>Add it to any website</h2>
+  <pre>&lt;script src="https://mylesparslow-collab.github.io/permit-map/permit-map.js" defer&gt;&lt;/script&gt;
+&lt;permit-map trade="countertops" center="34.0195,-118.4912" radius="10"
+  business-name="Your Business" phone="(555) 555-0100" url="yourbusiness.com"
+  accent="#F26B1D" storage="webhook" webhook="https://hooks.zapier.com/…"&gt;&lt;/permit-map&gt;</pre>
+
+  <div class="grid">
+    <div><b>Your brand</b><span>Business name, phone, website and accent color on the map and the postcards.</span></div>
+    <div><b>Fits your workflow</b><span>Every status change or note can post to Zapier or Make, so leads land in your CRM or a sheet.</span></div>
+    <div><b>Export anytime</b><span>Download your leads as a spreadsheet, or add follow-ups to your calendar.</span></div>
+    <div><b>Doesn't touch your site</b><span>Runs sealed off from your page's styles, so neither breaks the other.</span></div>
+  </div>
+
+  <footer>Permit data comes from public city and county records; sources and dates are listed in the map under "About the data". Maps © OpenStreetMap contributors. Built by MLP Consults.</footer>
+</div>
+<script src="permit-map.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+[
+ {
+  "id": "los-angeles",
+  "name": "Los Angeles",
+  "region": "Los Angeles area",
+  "lat": 34.10462,
+  "lng": -118.41497,
+  "radiusMi": 28.9,
+  "rows": 6889,
+  "file": "places/los-angeles.json",
+  "dateMin": "2026-09-16",
+  "dateMax": "2026-10-31",
+  "credit": {
+   "name": "LA City Open Data, building permits (pi9x-tg5x)",
+   "url": "https://data.lacity.org/d/pi9x-tg5x"
+  }
+ },
+ {
+  "id": "sacramento",
+  "name": "Sacramento",
+  "region": "Sacramento area",
+  "lat": 38.55223,
+  "lng": -121.47482,
+  "radiusMi": 10.3,
+  "rows": 2117,
+  "file": "places/sacramento.json",
+  "dateMin": "2026-09-10",
+  "dateMax": "2026-10-25",
+  "credit": {
+   "name": "City of Sacramento, issued building permits (ArcGIS)",
+   "url": "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/BldgPermitIssued_CurrentYear/FeatureServer/0"
+  }
+ },
+ {
+  "id": "san-jose",
+  "name": "San Jose",
+  "region": "Bay Area",
+  "lat": 37.29332,
+  "lng": -121.87185,
+  "radiusMi": 11.3,
+  "rows": 1636,
+  "file": "places/san-jose.json",
+  "dateMin": "2026-10-07",
+  "dateMax": "2026-11-06",
+  "credit": {
+   "name": "City of San Jose Open Data, building permits (last 30 days)",
+   "url": "https://data.sanjoseca.gov/dataset/building-permits"
+  }
+ },
+ {
+  "id": "la-county-unincorporated",
+  "name": "LA County (unincorporated)",
+  "region": "Los Angeles area",
+  "lat": 34.10958,
+  "lng": -118.14248,
+  "radiusMi": 50.1,
+  "rows": 1146,
+  "file": "places/la-county-unincorporated.json",
+  "dateMin": "2026-09-20",
+  "dateMax": "2026-11-04",
+  "credit": {
+   "name": "LA County Dept. of Public Works / EPIC-LA, unincorporated area permits (ArcGIS)",
+   "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/EPIC-LA_Case_History_view/FeatureServer/0"
+  }
+ },
+ {
+  "id": "san-diego",
+  "name": "San Diego",
+  "region": "San Diego",
+  "lat": 32.78861,
+  "lng": -117.13253,
+  "radiusMi": 19.1,
+  "rows": 922,
+  "file": "places/san-diego.json",
+  "dateMin": "2026-09-21",
+  "dateMax": "2026-11-05",
+  "credit": {
+   "name": "City of San Diego Open Data, development permits (approvals issued)",
+   "url": "https://data.sandiego.gov/datasets/development-permits/"
+  }
+ },
+ {
+  "id": "san-francisco",
+  "name": "San Francisco",
+  "region": "Bay Area",
+  "lat": 37.75378,
+  "lng": -122.44561,
+  "radiusMi": 4.9,
+  "rows": 832,
+  "file": "places/san-francisco.json",
+  "dateMin": "2026-09-22",
+  "dateMax": "2026-11-06",
+  "credit": {
+   "name": "City and County of San Francisco, DBI building permits (DataSF)",
+   "url": "https://data.sf.gov/d/i98e-djp9"
+  }
+ },
+ {
+  "id": "elk-grove",
+  "name": "Elk Grove",
+  "region": "Sacramento area",
+  "lat": 38.41235,
+  "lng": -121.4036,
+  "radiusMi": 7.5,
+  "rows": 749,
+  "file": "places/elk-grove.json",
+  "dateMin": "2026-09-22",
+  "dateMax": "2026-11-06",
+  "credit": {
+   "name": "City of Elk Grove, TRAKiT building permits (ArcGIS)",
+   "url": "https://webmaps.elkgrove.gov/arcgis/rest/services/AGOL/TRAKiT_Building_Permits/FeatureServer/0"
+  }
+ },
+ {
+  "id": "anaheim",
+  "name": "Anaheim",
+  "region": "Orange County",
+  "lat": 33.83599,
+  "lng": -117.91044,
+  "radiusMi": 11.4,
+  "rows": 555,
+  "file": "places/anaheim.json",
+  "dateMin": "2026-09-22",
+  "dateMax": "2026-11-06",
+  "credit": {
+   "name": "City of Anaheim, Accela building permits (GIS)",
+   "url": "https://gis.anaheim.net/server/rest/services/GIS/Accela_BuildingPermits/FeatureServer/0"
+  }
+ },
+ {
+  "id": "newport-beach",
+  "name": "Newport Beach",
+  "region": "Orange County",
+  "lat": 33.61547,
+  "lng": -117.88566,
+  "radiusMi": 5.0,
+  "rows": 439,
+  "file": "places/newport-beach.json",
+  "dateMin": "2026-09-23",
+  "dateMax": "2026-11-07",
+  "credit": {
+   "name": "City of Newport Beach, EnerGov self-service permits",
+   "url": "https://css.newportbeachca.gov/EnerGov_Prod/SelfService"
+  }
+ },
+ {
+  "id": "costa-mesa",
+  "name": "Costa Mesa",
+  "region": "Orange County",
+  "lat": 33.6668,
+  "lng": -117.91423,
+  "radiusMi": 3.3,
+  "rows": 317,
+  "file": "places/costa-mesa.json",
+  "dateMin": "2026-09-22",
+  "dateMax": "2026-11-06",
+  "credit": {
+   "name": "City of Costa Mesa, TESSA (EnerGov) permits",
+   "url": "https://permits.costamesaca.gov/EnerGov_Prod/SelfService"
+  }
+ },
+ {
+  "id": "clovis",
+  "name": "Clovis",
+  "region": "Central Valley",
+  "lat": 36.81793,
+  "lng": -119.68288,
+  "radiusMi": 4.7,
+  "rows": 194,
+  "file": "places/clovis.json",
+  "dateMin": "2026-09-22",
+  "dateMax": "2026-11-06",
+  "credit": {
+   "name": "City of Clovis, EnerGov self-service permits",
+   "url": "https://css.cityofclovis.com/EnerGov_Prod/SelfService"
+  }
+ },
+ {
+  "id": "lake-elsinore",
+  "name": "Lake Elsinore",
+  "region": "Inland Empire",
+  "lat": 33.66431,
+  "lng": -117.31417,
+  "radiusMi": 0.5,
+  "rows": 1,
+  "file": "places/lake-elsinore.json",
+  "dateMin": "2026-09-21",
+  "dateMax": "2026-11-05",
+  "credit": {
+   "name": "City of Lake Elsinore, EnerGov self-service permits",
+   "url": "https://mill.lake-elsinore.org/EnerGov_Prod/SelfService"
+  }
+ }
+]
